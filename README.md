@@ -29,8 +29,14 @@ This will be installed separately to 'Paddy', called 'Paddy2'; eventually I'll m
 Compared to 'Paddy 1' there are a few key differences that have been built so far:
 
 * Setting the properties via the layer name is optional – you can now set them via the inspector panel too.
-* A lot faster. In my couple of tests I benchmarked; this came out at being around 30x faster!!
+* A lot faster. In my couple of tests I benchmarked; this came out at being around 30x faster; and in some cases as much as 200x faster!!
 * This approach will allow for 'Nested symbols'. Although, it's not currently enabled in the beta, it is something I think I've managed to crack
+
+
+
+## When will is come out of beta?
+
+Once I can pretty much get feature parity with Paddy 1 – and I know what I have implemented is stable. I will release it. With the plan of fast follow-on release for features like nested symbols.
 
 
 ## Todo list
@@ -40,9 +46,10 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 - [x] Re-layout ancestors after moving a layer
 - [x] Re-layout ancestors and children after re-sizing a group
 - [x] Re-layout ancestors after changing Text layer value
-- [ ] Re-layout layers after changing symbol overrides
+- [x] Re-layout layers after changing symbol overrides
 - [x] Don't re-layout after selection changes from 'un-doing' (e.g. CMD + Z)
 - [x] Re-layout after deselecting everything; as a 'catch-all' if it hasn't already been layed out
+- [ ] Make sure 'Moving' a layer works with AnimaToolkit installed
 
 ---
 
@@ -68,6 +75,7 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 - [x] Change the icon of the 'Stack group' in the layer list to make it stand out
 - [ ] Update the 'Stack group' icon, to something better
 - [x] Re-layout the layers after changing the spacing/orientation from within the inspector UI
+- [ ] Better placement within the inspector?
 
 ---
 
@@ -82,8 +90,9 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 - [x] Allow only one vertical alignment, and one horizontal alignment from within the UI
 - [x] Re-layout the layers as soon as the alignment value is changed from the Inspector
 - [ ] Custom icon for each 'alignment group' within the layer list
-- [ ] Handle setting Alignment to more than one group at once
-- [ ] Hide vertical/horizontal alignment, based on if the group is stacked; and which direction it is stacked
+- [x] Handle setting Alignment to more than one group at once
+- [x] Hide vertical/horizontal alignment, based on if the group is stacked; and which direction it is stacked
+- [ ] Better placement within the inspector?
 
 ---
 
@@ -105,6 +114,7 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 - [x] Having a button to remove Padding
 - [x] Have a toggle to turn padding on/off
 - [ ] Toggle the number of input fields; from 4 to 2 to 1. (By clicking on the input field labels, like on the colour picker RGB/HSV)
+- [ ] Better placement within the inspector?
 
 ---
 
@@ -134,12 +144,17 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 
 - [ ] Turn auto-updating on/off
 - [ ] Show/hide the views in the inspector
+- [ ] Turn 'nested symbol' support on/off
+- [ ] Feedback / submit bug button
+- [ ] Button to donate via PayPal
 
 ---
 
 ### Installing / Updating
 
 - [x] Alert to restart Sketch after installing a new version of the plugin
+- [ ] Alert to possibly turn off AnimaToolkit?
+- [ ] Custom icon for the alerts
 
 ---
 
@@ -149,15 +164,28 @@ TODO: Update the todo list here
 
 - [ ] After detaching group, re-layout the detached group
 - [ ] Fix 'trailing' layers, after detaching from symbol
+- [ ] Check if a symbol has Padding within it
+- [ ] Check if a symbol has Stack groups within it
+- [ ] Figure out when a layer in a Symbol master has changed, and all of its instances may need resizing
+- [ ] Allow an instance to not be auto-resized even though its Master may have padding
+- [ ] Update all instance sizing, and re-layout its ancestors after the Symbol Master updates
 
 ---
 
 ### Nested symbols
 
-TODO: Update the todo list here
+TODO: Update the todo list here – a lot to do
 
 ---
 
 ### Migration
 
 - [ ] Command to convert 'Anima Stack groups' to 'Paddy' stack groups
+- [ ] Command to detach all symbols recursively for exporting to Zeplin etc.
+
+---
+
+### Other
+
+- [ ] Documentation for everything!
+- [ ] A demo video of the key changes
