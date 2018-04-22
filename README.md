@@ -83,6 +83,7 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 - [x] Re-layout the layers as soon as the alignment value is changed from the Inspector
 - [ ] Custom icon for each 'alignment group' within the layer list
 - [ ] Handle setting Alignment to more than one group at once
+- [ ] Hide vertical/horizontal alignment, based on if the group is stacked; and which direction it is stacked
 
 ---
 
@@ -103,6 +104,7 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 - [ ] Infer the padding properties when 'adding' padding
 - [x] Having a button to remove Padding
 - [x] Have a toggle to turn padding on/off
+- [ ] Toggle the number of input fields; from 4 to 2 to 1. (By clicking on the input field labels, like on the colour picker RGB/HSV)
 
 ---
 
