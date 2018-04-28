@@ -11,11 +11,13 @@ As you can see via the 'Todo list', not everything has been implemented yet – 
 
 ## Getting started
 
+**Warning: Please use the Beta version at your own risk. I don't want be responsible for possibly 'ruining' your very important Sketch document 😜**
+
 This will be installed separately to 'Paddy', called 'Paddy2'; eventually I'll make it the same thing once it is ready.
 
 **Testing:**
 * **Disable Paddy 1:** Make sure 'Paddy' isn't enabled
-* **Disable Anima Toolkit:** Make sure 'Anima Toolkit' is not enabled; right now for some reason, they don't play nice together
+* **Disable Anima Toolkit:** Make sure 'Anima Toolkit' is not enabled; right now for some reason, they don't seem to play nice together — in some cases :/ 
 * **Restart sketch:** this is very important. Every time you re-enable 'Paddy 2', if it's not working, try restarting Sketch.
 
 🙌 **Bugs:** Please report any issues that you find. Keep in mind, not everything has been implemented yet; see the 'Todo list' below. So only report on stuff not working if it has a 'tick' already against it.
@@ -37,6 +39,8 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 ## When will is come out of beta?
 
 Once I can pretty much get feature parity with Paddy 1 – and I know what I have implemented is stable. I will release it. With the plan of fast follow-on release for features like nested symbols.
+
+I will not aim to get everything in the following Todo list complete before shipping; some are stretch goals.
 
 
 ## Todo list
@@ -67,7 +71,8 @@ Once I can pretty much get feature parity with Paddy 1 – and I know what I hav
 - [ ] Re-layout after deleting layers in Sketch v50 (seems to work in previous versions)
 - [x] Re-layout after pasting a new layer into a Stack group
 - [x] Pixel fit the spacing – based on the user's preferences
-- [ ] Allow multiple spacing values – e.g. (10 20) would alternate spacing 10 and 20 pixels
+- [ ] STRETCH: Allow multiple spacing values – e.g. (10 20) would alternate spacing 10 and 20 pixels
+- [ ] STRETCH: After resizing a Stack group, resize the children to respect the new size, and the spacing. This is a really tricky one! But would be a huge time saver!!!
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
@@ -104,7 +109,8 @@ Once I can pretty much get feature parity with Paddy 1 – and I know what I hav
 - [x] Ignore layers beginning with '-'
 - [ ] Allow multiple layers to have padding
 - [x] Symbol instances as 'background' layer
-- [ ] Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
+- [ ] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
+- [ ] Re-layout layer after inserting a layer
 #### User interface
 - [x] Show padding values within the inspector
 - [ ] Show a custom icon for a 'background' layer with padding within the layer list
@@ -115,6 +121,7 @@ Once I can pretty much get feature parity with Paddy 1 – and I know what I hav
 - [x] Have a toggle to turn padding on/off
 - [ ] Toggle the number of input fields; from 4 to 2 to 1. (By clicking on the input field labels, like on the colour picker RGB/HSV)
 - [ ] Better placement within the inspector?
+- [ ] Infer current padding when CMD/ALT + clicking the '+' to add Padding
 
 ---
 
@@ -133,9 +140,11 @@ Once I can pretty much get feature parity with Paddy 1 – and I know what I hav
 
 - [x] Read 'ignore' layer from the '-' prefix on a layer name
 - [x] Save the 'ignore' layer to the layer data
+- [ ] Add an option to ignore – autosizing symbol instances (that have padding within their master)
 #### User interface
 - [x] Show 'ignore layer' in the Inspector
 - [x] Set the 'ignore layer' value on the selected layers when changing in the inspector
+- [ ] Show an extra checkbox to not auto-update symbol instances
 - [ ] Add a custom icon if the layer should be ignored
 
 ---
@@ -169,12 +178,21 @@ TODO: Update the todo list here
 - [ ] Figure out when a layer in a Symbol master has changed, and all of its instances may need resizing
 - [ ] Allow an instance to not be auto-resized even though its Master may have padding
 - [ ] Update all instance sizing, and re-layout its ancestors after the Symbol Master updates
+- [ ] Include the 'background' colour of the symbol after 'detaching'
+- [ ] Make sure it works with local Libraries
+- [ ] Make sure it works with remote Libraries
+- [ ] Cache auto-resize for symbol instances with the same overrides
+- [ ] After changing properties within a symbol; remove the size cache, and resize all instance
+- [ ] After changing properties within a symbol; remove the size cahce for any symbol master an instance of it may appear in
+- [ ] Handle detaching symbols, that have a symbol instance with padding applied to it (perhaps allow Groups to have padding?)
 
 ---
 
 ### Nested symbols
 
 TODO: Update the todo list here – a lot to do
+
+- [ ] Only override the visual look of a symbol instance, if the master has Stack Groups within it
 
 ---
 
@@ -189,3 +207,4 @@ TODO: Update the todo list here – a lot to do
 
 - [ ] Documentation for everything!
 - [ ] A demo video of the key changes
+- [ ] Create a 'Paddy' logo/icon
