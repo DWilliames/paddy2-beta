@@ -17,7 +17,7 @@ This will be installed separately to 'Paddy', called 'Paddy2'; eventually I'll m
 
 **Testing:**
 * **Disable Paddy 1:** Make sure 'Paddy' isn't enabled
-* **Disable Anima Toolkit:** Make sure 'Anima Toolkit' is not enabled; right now for some reason, they don't seem to play nice together — in some cases :/ 
+* **Disable Anima Toolkit:** Make sure 'Anima Toolkit' is not enabled; right now for some reason, they don't seem to play nice together — in some cases :/
 * **Restart sketch:** this is very important. Every time you re-enable 'Paddy 2', if it's not working, try restarting Sketch.
 
 🙌 **Bugs:** Please report any issues that you find. Keep in mind, not everything has been implemented yet; see the 'Todo list' below. So only report on stuff not working if it has a 'tick' already against it.
@@ -38,7 +38,7 @@ Compared to 'Paddy 1' there are a few key differences that have been built so fa
 
 ## When will is come out of beta?
 
-Once I can pretty much get feature parity with Paddy 1 – and I know what I have implemented is stable. I will release it. With the plan of fast follow-on release for features like nested symbols.
+Once I can pretty much get feature parity with Paddy 1, and I know what I have implemented is stable, I will release it. With the plan of fast follow-on release for features like nested symbols.
 
 I will not aim to get everything in the following Todo list complete before shipping; some are stretch goals.
 
@@ -54,6 +54,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Don't re-layout after selection changes from 'un-doing' (e.g. CMD + Z)
 - [x] Re-layout after deselecting everything; as a 'catch-all' if it hasn't already been layed out
 - [ ] Make sure 'Moving' a layer works with AnimaToolkit installed
+- [x] Update after a 'un-grouping' a group
+- [x] Make sure using keyboard shortcut to move a layer in the layer list (e.g to back) works. At the moment, it thinks the layer was deleted
 
 ---
 
@@ -73,6 +75,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Pixel fit the spacing – based on the user's preferences
 - [ ] STRETCH: Allow multiple spacing values – e.g. (10 20) would alternate spacing 10 and 20 pixels
 - [ ] STRETCH: After resizing a Stack group, resize the children to respect the new size, and the spacing. This is a really tricky one! But would be a huge time saver!!!
+- [ ] After resizing a group to infer new size, make sure that it does not infer a new size on Symbol Instances
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
@@ -156,6 +159,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Turn 'nested symbol' support on/off
 - [ ] Feedback / submit bug button
 - [ ] Button to donate via PayPal
+- [ ] Option to show custom icons in layer list or not
+- [ ] Option to always include the properties in the layer name / or not
 
 ---
 
@@ -164,6 +169,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Alert to restart Sketch after installing a new version of the plugin
 - [ ] Alert to possibly turn off AnimaToolkit?
 - [ ] Custom icon for the alerts
+- [x] After asking to restart Sketch – re-open the same documents again
 
 ---
 
@@ -183,8 +189,9 @@ TODO: Update the todo list here
 - [ ] Make sure it works with remote Libraries
 - [ ] Cache auto-resize for symbol instances with the same overrides
 - [ ] After changing properties within a symbol; remove the size cache, and resize all instance
-- [ ] After changing properties within a symbol; remove the size cahce for any symbol master an instance of it may appear in
+- [ ] After changing properties within a symbol; remove the size cache for any symbol master an instance of it may appear in
 - [ ] Handle detaching symbols, that have a symbol instance with padding applied to it (perhaps allow Groups to have padding?)
+- [ ] Update all instances after 'update from library' command is run
 
 ---
 
