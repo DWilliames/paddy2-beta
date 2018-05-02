@@ -1,0 +1,47 @@
+{
+  "name": "Paddy2",
+  "description": "Automated padding, spacing and alignment for your Sketch layers",
+  "author": "David Williames",
+  "version": "0.1",
+  "identifier": "com.davidwilliames.sketch-plugins.paddy2",
+"appcast": "https://raw.githubusercontent.com/DWilliames/paddy2-beta/master/.appcast.xml",
+  "compatibleVersion": 49,
+  "bundleVersion": 1,
+  "commands": [{
+      "name": "Show settings",
+      "identifier": "showSettings",
+      "script": "main.js",
+      "handler": "showSettings"
+    },
+               {
+               "name": "Restart",
+               "identifier": "restart",
+               "script": "main.js",
+               "handler": "restart"
+               },
+    {
+      "script": "main.js",
+      "handlers": {
+        "actions": {
+          "Startup": "start",
+               "Paste.finish": "layoutSelection",
+               "PasteHere.finish": "layoutSelection",
+               "Duplicate.finish": "layoutSelection",
+               "MoveToBack.begin": "holdOffUntilNextSelection",
+               "MoveToFront.begin": "holdOffUntilNextSelection",
+               "MoveForward.begin": "holdOffUntilNextSelection",
+               "MoveBackward.begin": "holdOffUntilNextSelection",
+               "Group.begin": "holdOffChangesFromSelection",
+               "Group.finish": "layoutSelection",
+               "Ungroup.finish": "layoutSelection"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "items": [
+      "showSettings",
+              "restart"
+    ]
+  }
+}

@@ -28,6 +28,11 @@ This will be installed separately to 'Paddy', called 'Paddy2'; eventually I'll m
 
 ## Key differences
 
+[Check out the video overview:](https://www.youtube.com/watch?v=cTXpWeiH17s)
+
+[![Paddy 2 beta Preview 1 video](https://img.youtube.com/vi/cTXpWeiH17s/0.jpg)](https://www.youtube.com/watch?v=cTXpWeiH17s)
+
+
 Compared to 'Paddy 1' there are a few key differences that have been built so far:
 
 * Setting the properties via the layer name is optional – you can now set them via the inspector panel too.
@@ -114,6 +119,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Symbol instances as 'background' layer
 - [ ] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
 - [ ] Re-layout layer after inserting a layer
+- [ ] Allow undefined padding for specific edges – e.g. 'x'
 #### User interface
 - [x] Show padding values within the inspector
 - [ ] Show a custom icon for a 'background' layer with padding within the layer list

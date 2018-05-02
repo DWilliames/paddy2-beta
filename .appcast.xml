@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Paddy 2</title>
+    <link>https://raw.githubusercontent.com/DWilliames/paddy2-beta/master/.appcast.xml</link>
+    <description>Automated padding, spacing and alignment for your Sketch layers</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.1</title>
+      <description>Initial release</description>
+      <enclosure url="https://github.com/DWilliames/paddy2-beta/releases/download/v0.1/Paddy2.sketchplugin.zip" sparkle:version="0.1" />
+    </item>
+  </channel>
+</rss>

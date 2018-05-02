@@ -1,0 +1,6 @@
+framework module PaddyFramework {
+  umbrella header "PaddyFramework.h"
+
+  export *
+  module * { export * }
+}
