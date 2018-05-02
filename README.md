@@ -184,6 +184,7 @@ TODO: Update the todo list here
 - [ ] Figure out when a layer in a Symbol master has changed, and all of its instances may need resizing
 - [ ] Allow an instance to not be auto-resized even though its Master may have padding
 - [ ] Update all instance sizing, and re-layout its ancestors after the Symbol Master updates
+- [ ] Only update the instances once the user has deselected everything
 - [ ] Include the 'background' colour of the symbol after 'detaching'
 - [ ] Make sure it works with local Libraries
 - [ ] Make sure it works with remote Libraries
