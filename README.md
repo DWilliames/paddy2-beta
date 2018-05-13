@@ -61,6 +61,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Make sure 'Moving' a layer works with AnimaToolkit installed
 - [x] Update after a 'un-grouping' a group
 - [x] Make sure using keyboard shortcut to move a layer in the layer list (e.g to back) works. At the moment, it thinks the layer was deleted
+- [ ] Have some better logic for how a group should re-position after; inserting layer, resizing layer, moving layer etc.
+- [x] Make sure 'selection changed' works for Sketch 49 and Sketch 50
 
 ---
 
@@ -75,18 +77,18 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Re-layout after hiding a layout; if 'collapsing' is turned on
 - [x] Re-layout after duplicating via CMD + D
 - [x] Re-layout after deleting layer
-- [ ] Re-layout after deleting layers in Sketch v50 (seems to work in previous versions)
+- [x] Re-layout after deleting layers in Sketch v50 (seems to work in previous versions)
 - [x] Re-layout after pasting a new layer into a Stack group
 - [x] Pixel fit the spacing – based on the user's preferences
 - [ ] STRETCH: Allow multiple spacing values – e.g. (10 20) would alternate spacing 10 and 20 pixels
-- [ ] STRETCH: After resizing a Stack group, resize the children to respect the new size, and the spacing. This is a really tricky one! But would be a huge time saver!!!
+- [x] STRETCH: After resizing a Stack group, resize the children to respect the new size, and the spacing. This is a really tricky one! But would be a huge time saver!!!
 - [ ] After resizing a group to infer new size, make sure that it does not infer a new size on Symbol Instances
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
 - [x] Show option to 'remove' the stack group from within the inspector
 - [x] Change the icon of the 'Stack group' in the layer list to make it stand out
-- [ ] Update the 'Stack group' icon, to something better
+- [x] Update the 'Stack group' icon, to something better
 - [x] Re-layout the layers after changing the spacing/orientation from within the inspector UI
 - [ ] Better placement within the inspector?
 
@@ -98,11 +100,12 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Save alignment properties to layer data – so it doesn't *have* to be read from the layer name
 - [x] Allow multiple alignment values
 - [x] Pixel fit the alignment – based on the user's preferences
+- [x] If there's a 'locked' layer, use it as an anchor point for laying out / aligning the layers
 #### User interface
 - [x] Show an 'Alignments' view within the inspector for all groups
 - [x] Allow only one vertical alignment, and one horizontal alignment from within the UI
 - [x] Re-layout the layers as soon as the alignment value is changed from the Inspector
-- [ ] Custom icon for each 'alignment group' within the layer list
+- [x] Custom icon for each 'alignment group' within the layer list
 - [x] Handle setting Alignment to more than one group at once
 - [x] Hide vertical/horizontal alignment, based on if the group is stacked; and which direction it is stacked
 - [ ] Better placement within the inspector?
@@ -115,22 +118,23 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Save padding to layer data – so it doesn't *have* to be read from the layer name
 - [x] Shape layers as 'background' layer
 - [x] Ignore layers beginning with '-'
-- [ ] Allow multiple layers to have padding
+- [x] Allow multiple layers to have padding
 - [x] Symbol instances as 'background' layer
-- [ ] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
-- [ ] Re-layout layer after inserting a layer
+- [x] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
+- [x] Re-layout layer after inserting a layer
 - [ ] Allow undefined padding for specific edges – e.g. 'x'
 #### User interface
 - [x] Show padding values within the inspector
-- [ ] Show a custom icon for a 'background' layer with padding within the layer list
+- [x] Show a custom icon for a 'background' layer with padding within the layer list
 - [x] Re-layout the layers after changing the padding properties from within the Inspector
 - [x] Add a button to 'add' padding to a layer from within the inspector
-- [ ] Infer the padding properties when 'adding' padding
+- [x] Infer the padding properties when 'adding' padding – at the moment, will work after 'CMD/ALT' clicking '+' to add padding
 - [x] Having a button to remove Padding
 - [x] Have a toggle to turn padding on/off
-- [ ] Toggle the number of input fields; from 4 to 2 to 1. (By clicking on the input field labels, like on the colour picker RGB/HSV)
+- [x] Toggle the number of input fields; from 4 to 2 to 1. (By clicking on the input field labels, like on the colour picker RGB/HSV)
+- [ ] Have a hover effect to highlight the input fields; to indicate clicking on them may do something
 - [ ] Better placement within the inspector?
-- [ ] Infer current padding when CMD/ALT + clicking the '+' to add Padding
+- [x] Infer current padding when CMD/ALT + clicking the '+' to add Padding
 
 ---
 
@@ -165,8 +169,9 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Turn 'nested symbol' support on/off
 - [ ] Feedback / submit bug button
 - [ ] Button to donate via PayPal
-- [ ] Option to show custom icons in layer list or not
+- [x] Option to show custom icons in layer list or not
 - [ ] Option to always include the properties in the layer name / or not
+- [ ] Default padding – to be used when the padding is not inferred
 
 ---
 
@@ -213,7 +218,7 @@ TODO: Update the todo list here – a lot to do
 ### Migration
 
 - [ ] Command to convert 'Anima Stack groups' to 'Paddy' stack groups
-- [ ] Command to detach all symbols recursively for exporting to Zeplin etc.
+- [ ] Command to detach all symbols recursively for exporting to Zeplin etc. – possibly; this may not be necessary
 
 ---
 
