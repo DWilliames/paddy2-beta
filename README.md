@@ -83,6 +83,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] STRETCH: Allow multiple spacing values – e.g. (10 20) would alternate spacing 10 and 20 pixels
 - [x] STRETCH: After resizing a Stack group, resize the children to respect the new size, and the spacing. This is a really tricky one! But would be a huge time saver!!!
 - [ ] After resizing a group to infer new size, make sure that it does not infer a new size on Symbol Instances
+- [ ] Allow an option for 'stretching' – see https://github.com/DWilliames/paddy2-beta/issues/5
+- [ ] Read 'stretching' properties from the layer list names
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
@@ -91,6 +93,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Update the 'Stack group' icon, to something better
 - [x] Re-layout the layers after changing the spacing/orientation from within the inspector UI
 - [ ] Better placement within the inspector?
+- [ ] Show a custom icon for vertical/horizontal stretching
 
 ---
 
@@ -123,6 +126,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
 - [x] Re-layout layer after inserting a layer
 - [ ] Allow undefined padding for specific edges – e.g. 'x'
+- [ ] Allow a 'group' to have padding – so that it can be used for a detached symbol instance that has padding
 #### User interface
 - [x] Show padding values within the inspector
 - [x] Show a custom icon for a 'background' layer with padding within the layer list
