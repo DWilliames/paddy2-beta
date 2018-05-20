@@ -85,12 +85,13 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] After resizing a group to infer new size, make sure that it does not infer a new size on Symbol Instances
 - [ ] Allow an option for 'stretching' – see https://github.com/DWilliames/paddy2-beta/issues/5
 - [ ] Read 'stretching' properties from the layer list names
+- [ ] Allow an Artboard to be a Stack Group
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
 - [x] Show option to 'remove' the stack group from within the inspector
 - [x] Change the icon of the 'Stack group' in the layer list to make it stand out
-- [ ] Update the icon to have the alignment directions etc. darker rather than white
+- [x] Update the icon to have the alignment directions etc. darker rather than white
 - [x] Update the 'Stack group' icon, to something better
 - [x] Re-layout the layers after changing the spacing/orientation from within the inspector UI
 - [ ] Better placement within the inspector?
@@ -105,6 +106,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Allow multiple alignment values
 - [x] Pixel fit the alignment – based on the user's preferences
 - [x] If there's a 'locked' layer, use it as an anchor point for laying out / aligning the layers
+- [x] If there's not a 'locked' layer Anchor the laying out based on the selected layer – unless CMD or ALT are held down
 #### User interface
 - [x] Show an 'Alignments' view within the inspector for all groups
 - [x] Allow only one vertical alignment, and one horizontal alignment from within the UI
@@ -177,7 +179,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Option to show custom icons in layer list or not
 - [ ] Option to always include the properties in the layer name / or not
 - [ ] Default padding – to be used when the padding is not inferred
-- [ ] Add option to re-organise layer list based on layers within stack group 
+- [ ] Add option to re-organise layer list based on layers within stack group
 
 ---
 
