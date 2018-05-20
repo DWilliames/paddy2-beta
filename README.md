@@ -90,6 +90,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Show UI in the inspector to manipulate the stack vie properties
 - [x] Show option to 'remove' the stack group from within the inspector
 - [x] Change the icon of the 'Stack group' in the layer list to make it stand out
+- [ ] Update the icon to have the alignment directions etc. darker rather than white
 - [x] Update the 'Stack group' icon, to something better
 - [x] Re-layout the layers after changing the spacing/orientation from within the inspector UI
 - [ ] Better placement within the inspector?
@@ -176,6 +177,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Option to show custom icons in layer list or not
 - [ ] Option to always include the properties in the layer name / or not
 - [ ] Default padding – to be used when the padding is not inferred
+- [ ] Add option to re-organise layer list based on layers within stack group 
 
 ---
 
