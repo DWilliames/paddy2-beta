@@ -128,7 +128,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Symbol instances as 'background' layer
 - [x] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
 - [x] Re-layout layer after inserting a layer
-- [ ] Allow undefined padding for specific edges – e.g. 'x'
+- [x] Allow undefined padding for specific edges – e.g. 'x'
 - [ ] Allow a 'group' to have padding – so that it can be used for a detached symbol instance that has padding
 #### User interface
 - [x] Show padding values within the inspector
@@ -139,9 +139,11 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Having a button to remove Padding
 - [x] Have a toggle to turn padding on/off
 - [x] Toggle the number of input fields; from 4 to 2 to 1. (By clicking on the input field labels, like on the colour picker RGB/HSV)
-- [ ] Have a hover effect to highlight the input fields; to indicate clicking on them may do something
+- [x] Have a hover effect to highlight the input fields; to indicate clicking on them may do something
 - [ ] Better placement within the inspector?
 - [x] Infer current padding when CMD/ALT + clicking the '+' to add Padding
+- [x] Allow setting Padding on multiple layers at once
+- [ ] Better handling of setting specifc Padding values on multiple layers at once
 
 ---
 
@@ -150,7 +152,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Min / max width
 - [ ] Min / max height
 #### User interface
-- [x] Have a 'settings' button in the inspector when a layer has 'padding' to get to the 'advanced settings'
+- [ ] Have a 'settings' button in the inspector when a layer has 'padding' to get to the 'advanced settings'
 - [ ] Show UI to set min / max height / width
 - [ ] Re-layout after changing the 'advanced sizing'
 
@@ -160,11 +162,11 @@ I will not aim to get everything in the following Todo list complete before ship
 
 - [x] Read 'ignore' layer from the '-' prefix on a layer name
 - [x] Save the 'ignore' layer to the layer data
-- [ ] Add an option to ignore – autosizing symbol instances (that have padding within their master)
+- [x] Add an option to ignore – autosizing symbol instances (that have padding within their master)
 #### User interface
 - [x] Show 'ignore layer' in the Inspector
 - [x] Set the 'ignore layer' value on the selected layers when changing in the inspector
-- [ ] Show an extra checkbox to not auto-update symbol instances
+- [x] Show an extra checkbox to not auto-update symbol instances
 - [ ] Add a custom icon if the layer should be ignored
 
 ---
@@ -187,7 +189,7 @@ I will not aim to get everything in the following Todo list complete before ship
 
 - [x] Alert to restart Sketch after installing a new version of the plugin
 - [ ] Alert to possibly turn off AnimaToolkit?
-- [ ] Custom icon for the alerts
+- [x] Custom icon for the alerts
 - [x] After asking to restart Sketch – re-open the same documents again
 
 ---
