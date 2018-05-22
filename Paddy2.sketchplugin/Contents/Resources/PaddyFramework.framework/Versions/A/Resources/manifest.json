@@ -1,10 +1,11 @@
 {
-  "name": "Paddy2",
+  "name": "Paddy 2",
   "description": "Automated padding, spacing and alignment for your Sketch layers",
   "author": "David Williames",
-  "version": "0.2",
+  "version": "0.3",
   "identifier": "com.davidwilliames.sketch-plugins.paddy2",
 "appcast": "https://raw.githubusercontent.com/DWilliames/paddy2-beta/master/.appcast.xml",
+"icon": "icon.png",
   "compatibleVersion": 49,
   "bundleVersion": 1,
   "commands": [{

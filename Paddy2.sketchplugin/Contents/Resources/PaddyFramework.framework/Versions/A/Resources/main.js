@@ -12,7 +12,7 @@ function onSetUp(context) {
 
 function start(context) {
     // Stub, so that 'onSetUp' is run on plugin being enabled or Sketch starting
-    print('START UP')
+    print('Paddy Start up')
     PaddyManager.start()
 }
 
