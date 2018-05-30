@@ -235,7 +235,7 @@ TODO: Update the todo list here – a lot to do
 
 ### Migration
 
-- [ ] Command to convert 'Anima Stack groups' to 'Paddy' stack groups
+- [ ] Command to convert 'Anima Stack groups' to 'Paddy' stack groups?
 - [ ] Command to detach all symbols recursively for exporting to Zeplin etc. – possibly; this may not be necessary
 
 ---
@@ -245,3 +245,4 @@ TODO: Update the todo list here – a lot to do
 - [ ] Documentation for everything!
 - [ ] A demo video of the key changes
 - [ ] Create a 'Paddy' logo/icon
+- [ ] Cache 'PaddingLayers' and 'StackGroups' to be more performant
