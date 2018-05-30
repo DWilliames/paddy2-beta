@@ -86,6 +86,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Allow an option for 'stretching' – see https://github.com/DWilliames/paddy2-beta/issues/5
 - [ ] Read 'stretching' properties from the layer list names
 - [ ] Allow an Artboard to be a Stack Group
+- [ ] Keyboard shortcut to make a Stack Group – 'Control + Alt + Command + p'
+- [ ] Custom alert to enter Stack spacing after using the keyboard shortcut
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
@@ -130,6 +132,10 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Re-layout layer after inserting a layer
 - [x] Allow undefined padding for specific edges – e.g. 'x'
 - [ ] Allow a 'group' to have padding – so that it can be used for a detached symbol instance that has padding
+- [ ] Keyboard shortcut to add Padding to a layer – 'Control + Alt + p' or 'Shit + Alt + p' to imply padding
+- [ ] Custom alert to enter padding values after using the keyboard shortcut
+- [ ] Custom icon in layer list for symbol instance that has padding
+- [ ] Custom icon in the layer list for a group that has padding
 #### User interface
 - [x] Show padding values within the inspector
 - [x] Show a custom icon for a 'background' layer with padding within the layer list
@@ -173,12 +179,13 @@ I will not aim to get everything in the following Todo list complete before ship
 
 ### User settings
 
-- [ ] Turn auto-updating on/off
+- [ ] Turn auto-updating layout on/off
 - [ ] Show/hide the views in the inspector
 - [ ] Turn 'nested symbol' support on/off
 - [ ] Feedback / submit bug button
 - [ ] Button to donate via PayPal
 - [x] Option to show custom icons in layer list or not
+- [ ] Update icon for detailed custom icons
 - [ ] Option to always include the properties in the layer name / or not
 - [ ] Default padding – to be used when the padding is not inferred
 - [ ] Add option to re-organise layer list based on layers within stack group
@@ -207,6 +214,7 @@ TODO: Update the todo list here
 - [ ] Update all instance sizing, and re-layout its ancestors after the Symbol Master updates
 - [ ] Only update the instances once the user has deselected everything
 - [ ] Include the 'background' colour of the symbol after 'detaching'
+- [ ] After 'detaching', make 'hidden' nested symbols ignored
 - [ ] Make sure it works with local Libraries
 - [ ] Make sure it works with remote Libraries
 - [ ] Cache auto-resize for symbol instances with the same overrides
@@ -227,7 +235,7 @@ TODO: Update the todo list here – a lot to do
 
 ### Migration
 
-- [ ] Command to convert 'Anima Stack groups' to 'Paddy' stack groups
+- [ ] Command to convert 'Anima Stack groups' to 'Paddy' stack groups?
 - [ ] Command to detach all symbols recursively for exporting to Zeplin etc. – possibly; this may not be necessary
 
 ---
@@ -237,3 +245,4 @@ TODO: Update the todo list here – a lot to do
 - [ ] Documentation for everything!
 - [ ] A demo video of the key changes
 - [ ] Create a 'Paddy' logo/icon
+- [ ] Cache 'PaddingLayers' and 'StackGroups' to be more performant
