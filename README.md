@@ -134,6 +134,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Allow a 'group' to have padding – so that it can be used for a detached symbol instance that has padding
 - [ ] Keyboard shortcut to add Padding to a layer – 'Control + Alt + p' or 'Shit + Alt + p' to imply padding
 - [ ] Custom alert to enter padding values after using the keyboard shortcut
+- [ ] Custom icon in layer list for symbol instance that has padding
+- [ ] Custom icon in the layer list for a group that has padding
 #### User interface
 - [x] Show padding values within the inspector
 - [x] Show a custom icon for a 'background' layer with padding within the layer list
@@ -183,6 +185,7 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Feedback / submit bug button
 - [ ] Button to donate via PayPal
 - [x] Option to show custom icons in layer list or not
+- [ ] Update icon for detailed custom icons
 - [ ] Option to always include the properties in the layer name / or not
 - [ ] Default padding – to be used when the padding is not inferred
 - [ ] Add option to re-organise layer list based on layers within stack group
