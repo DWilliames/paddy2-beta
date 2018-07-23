@@ -58,11 +58,13 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] Re-layout layers after changing symbol overrides
 - [x] Don't re-layout after selection changes from 'un-doing' (e.g. CMD + Z)
 - [x] Re-layout after deselecting everything; as a 'catch-all' if it hasn't already been layed out
-- [ ] Make sure 'Moving' a layer works with AnimaToolkit installed
+- [ ] ~Make sure 'Moving' a layer works with AnimaToolkit installed~ — it looks like this will not be possible unfortunately
 - [x] Update after a 'un-grouping' a group
 - [x] Make sure using keyboard shortcut to move a layer in the layer list (e.g to back) works. At the moment, it thinks the layer was deleted
 - [ ] Have some better logic for how a group should re-position after; inserting layer, resizing layer, moving layer etc.
 - [x] Make sure 'selection changed' works for Sketch 49 and Sketch 50
+- [ ] Re-layout after changing text alignment from 'fixed' to 'auto'
+- [ ] Add option to re-layout manually – e.g. re-layout selected layers
 
 ---
 
@@ -86,8 +88,8 @@ I will not aim to get everything in the following Todo list complete before ship
 - [ ] Allow an option for 'stretching' – see https://github.com/DWilliames/paddy2-beta/issues/5
 - [ ] Read 'stretching' properties from the layer list names
 - [ ] Allow an Artboard to be a Stack Group
-- [ ] Keyboard shortcut to make a Stack Group – 'Control + Alt + Command + p'
-- [ ] Custom alert to enter Stack spacing after using the keyboard shortcut
+- [x] Keyboard shortcut to make a Stack Group – 'Control + Alt + Command + p'
+- [x] Custom alert to enter Stack spacing after using the keyboard shortcut
 #### User interface
 - [x] Show a view in the inspector when eligible to create a stack group
 - [x] Show UI in the inspector to manipulate the stack vie properties
@@ -131,11 +133,12 @@ I will not aim to get everything in the following Todo list complete before ship
 - [x] STRETCH: Adjust sibling layers to match the correct size after resizing the padding layer directly!! (This is a big one! Tricky to do; but a real new timesaver.)
 - [x] Re-layout layer after inserting a layer
 - [x] Allow undefined padding for specific edges – e.g. 'x'
-- [ ] Allow a 'group' to have padding – so that it can be used for a detached symbol instance that has padding
+- [x] Allow a 'group' to have padding – so that it can be used for a detached symbol instance that has padding
 - [ ] Keyboard shortcut to add Padding to a layer – 'Control + Alt + p' or 'Shit + Alt + p' to imply padding
 - [ ] Custom alert to enter padding values after using the keyboard shortcut
 - [ ] Custom icon in layer list for symbol instance that has padding
 - [ ] Custom icon in the layer list for a group that has padding
+- [ ] Allow an Artboard to have Padding
 #### User interface
 - [x] Show padding values within the inspector
 - [x] Show a custom icon for a 'background' layer with padding within the layer list
@@ -180,13 +183,13 @@ I will not aim to get everything in the following Todo list complete before ship
 ### User settings
 
 - [ ] Turn auto-updating layout on/off
-- [ ] Show/hide the views in the inspector
+- [x] Show/hide the views in the inspector
 - [ ] Turn 'nested symbol' support on/off
 - [ ] Feedback / submit bug button
 - [ ] Button to donate via PayPal
 - [x] Option to show custom icons in layer list or not
 - [ ] Update icon for detailed custom icons
-- [ ] Option to always include the properties in the layer name / or not
+- [x] Option to always include the properties in the layer name / or not
 - [ ] Default padding – to be used when the padding is not inferred
 - [ ] Add option to re-organise layer list based on layers within stack group
 
@@ -195,9 +198,10 @@ I will not aim to get everything in the following Todo list complete before ship
 ### Installing / Updating
 
 - [x] Alert to restart Sketch after installing a new version of the plugin
-- [ ] Alert to possibly turn off AnimaToolkit?
+- [x] Alert to possibly turn off AnimaToolkit?
 - [x] Custom icon for the alerts
 - [x] After asking to restart Sketch – re-open the same documents again
+- [x] Auto disable Paddy 1 when installing Paddy 2 beta
 
 ---
 
@@ -207,11 +211,11 @@ TODO: Update the todo list here
 
 - [ ] After detaching group, re-layout the detached group
 - [ ] Fix 'trailing' layers, after detaching from symbol
-- [ ] Check if a symbol has Padding within it
-- [ ] Check if a symbol has Stack groups within it
-- [ ] Figure out when a layer in a Symbol master has changed, and all of its instances may need resizing
-- [ ] Allow an instance to not be auto-resized even though its Master may have padding
-- [ ] Update all instance sizing, and re-layout its ancestors after the Symbol Master updates
+- [x] Check if a symbol has Padding within it
+- [x] Check if a symbol has Stack groups within it
+- [x] Figure out when a layer in a Symbol master has changed, and all of its instances may need resizing
+- [x] Allow an instance to not be auto-resized even though its Master may have padding
+- [x] Update all instance sizing, and re-layout its ancestors after the Symbol Master updates
 - [ ] Only update the instances once the user has deselected everything
 - [ ] Include the 'background' colour of the symbol after 'detaching'
 - [ ] After 'detaching', make 'hidden' nested symbols ignored

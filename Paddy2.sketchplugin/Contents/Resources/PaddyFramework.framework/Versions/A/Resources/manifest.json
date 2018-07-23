@@ -2,10 +2,10 @@
   "name": "Paddy 2",
   "description": "Automated padding, spacing and alignment for your Sketch layers",
   "author": "David Williames",
-  "version": "0.4",
+  "version": "0.5",
   "identifier": "com.davidwilliames.sketch-plugins.paddy2",
-"appcast": "https://raw.githubusercontent.com/DWilliames/paddy2-beta/master/.appcast.xml",
-"icon": "icon.png",
+  "appcast": "https://raw.githubusercontent.com/DWilliames/paddy2-beta/master/.appcast.xml",
+  "icon": "icon.png",
   "compatibleVersion": 49,
   "bundleVersion": 1,
   "commands": [{
@@ -14,35 +14,66 @@
       "script": "main.js",
       "handler": "showSettings"
     },
-               {
-               "name": "Restart",
-               "identifier": "restart",
-               "script": "main.js",
-               "handler": "restart"
-               },
+    {
+      "name": "Restart (test re-starting Sketch)",
+      "identifier": "restart",
+      "script": "main.js",
+      "handler": "restart"
+    },
+    {
+      "name": "Enter padding for selection",
+      "identifier": "promptToApplyPadding",
+      "shortcut": "control alt p",
+      "script": "main.js",
+      "handler": "promptToApplyPadding",
+      "description": "Enter padding amount to the currently selected layers",
+      "icon": "padding.png"
+    },
+    {
+      "name": "Imply padding for selection",
+      "identifier": "autoApplyPadding",
+      "shortcut": "command shift p",
+      "script": "main.js",
+      "handler": "autoApplyPadding",
+      "description": "Apply implied padding to the currently selected layers",
+      "icon": "padding.png"
+    },
+    {
+      "name": "Spacing for selection",
+      "identifier": "applySpacing",
+      "shortcut": "control alt command p",
+      "script": "main.js",
+      "handler": "applySpacing",
+      "description": "Apply spacing to the currently selected groups",
+      "icon": "spacing.png"
+    },
     {
       "script": "main.js",
       "handlers": {
         "actions": {
           "Startup": "start",
-               "Paste.finish": "layoutSelection",
-               "PasteHere.finish": "layoutSelection",
-               "Duplicate.finish": "layoutSelection",
-               "MoveToBack.begin": "holdOffUntilNextSelection",
-               "MoveToFront.begin": "holdOffUntilNextSelection",
-               "MoveForward.begin": "holdOffUntilNextSelection",
-               "MoveBackward.begin": "holdOffUntilNextSelection",
-               "Group.begin": "holdOffChangesFromSelection",
-               "Group.finish": "layoutSelection",
-               "Ungroup.finish": "layoutSelection"
+          "Paste.finish": "layoutSelection",
+          "PasteHere.finish": "layoutSelection",
+          "Duplicate.finish": "layoutSelection",
+          "MoveToBack.begin": "holdOffUntilNextSelection",
+          "MoveToFront.begin": "holdOffUntilNextSelection",
+          "MoveForward.begin": "holdOffUntilNextSelection",
+          "MoveBackward.begin": "holdOffUntilNextSelection",
+          "Group.begin": "holdOffChangesFromSelection",
+          "Group.finish": "layoutSelection",
+          "Ungroup.finish": "layoutSelection"
         }
       }
     }
   ],
   "menu": {
     "items": [
-      "showSettings",
-              "restart"
+      "promptToApplyPadding",
+      "autoApplyPadding",
+      "-",
+      "applySpacing",
+      "-",
+      "showSettings"
     ]
   }
 }

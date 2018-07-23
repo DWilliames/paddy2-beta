@@ -6,13 +6,12 @@ function onSetUp(context) {
         var path = context.plugin.urlForResourceNamed("PaddyFramework.framework").path().stringByDeletingLastPathComponent()
         Mocha.sharedRuntime().loadFrameworkWithName_inDirectory("PaddyFramework", path)
     }
-    
+
     PaddyManager.updateContext(context)
 }
 
 function start(context) {
     // Stub, so that 'onSetUp' is run on plugin being enabled or Sketch starting
-    print('Paddy Start up')
     PaddyManager.start()
 }
 
@@ -37,6 +36,18 @@ function allActions(context) {
 
 function showSettings(context) {
   PaddyManager.showSettings()
+}
+
+function promptToApplyPadding(context) {
+  PaddyManager.promptToApplyPadding()
+}
+
+function autoApplyPadding(context) {
+  PaddyManager.autoApplyPadding()
+}
+
+function applySpacing(context) {
+  PaddyManager.applySpacing()
 }
 
 function restart(context) {
