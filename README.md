@@ -19,6 +19,7 @@ This will be installed separately to 'Paddy', called 'Paddy2'; eventually I'll m
 * **Disable Paddy 1:** Make sure 'Paddy' isn't enabled
 * **Disable Anima Toolkit:** Make sure 'Anima Toolkit' is not enabled; right now for some reason, they don't seem to play nice together — in some cases :/
 * **Restart sketch:** this is very important. Every time you re-enable 'Paddy 2', if it's not working, try restarting Sketch.
+* **Re-enable all plugins:** If there is nothing above does not help, so disable all plugins, restart sketch and enjoy!
 
 🙌 **Bugs:** Please report any issues that you find. Keep in mind, not everything has been implemented yet; see the 'Todo list' below. So only report on stuff not working if it has a 'tick' already against it.
 
